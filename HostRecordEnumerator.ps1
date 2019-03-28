@@ -18,6 +18,7 @@ if ( -not ($NetworkCIDR)) {
     For example, 192.168.0.0/24, 172.26.0.0/23"
 }
 
+# Iterate through provided networks
 ForEach ($Network in $NetworkCIDR) {
 
     # Regex for IP String
