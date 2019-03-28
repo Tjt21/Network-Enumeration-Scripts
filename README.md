@@ -26,4 +26,4 @@ Since this script uses the Write-Output functionality of PowerShell, the output 
 
 Gathers only the hostnames of found hosts
 
-`.\HostRecordEnumerator.ps1 -NetworkCIDR 10.32.0.0/24 -SleepTime 50 -FoundRecordsOnly $true | ForEach-Object { $_.Split(",")[1] }`
+`.\DNS-Mapper.ps1 -NetworkCIDR 10.32.0.0/24 -SleepTime 50 -FoundRecordsOnly $true | ForEach-Object { $_.Split(",")[1] }`
