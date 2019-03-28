@@ -7,7 +7,9 @@ Powershell Script that enumerates all host records (A and PTR) in a provided net
 **Options:**
 
 $NetworkCIDR - String[] - The network address
+
 $SleepTime - int - Time to wait between queries (in milliseconds)
+
 $FoundRecordsOnly - Boolean - Returns only IPs with A or PTR records
 
 **Usage:** 
