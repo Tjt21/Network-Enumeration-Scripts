@@ -14,7 +14,7 @@ $FoundRecordsOnly - Boolean - Returns only IPs with A or PTR records
 
 **Usage:** 
 
-.\DNS-Mapper.ps1 -NetworkCIDR 192.168.0.0/24 -SleepTime 50 -FoundRecordsOnly $True
+`.\DNS-Mapper.ps1 -NetworkCIDR 192.168.0.0/24 -SleepTime 50 -FoundRecordsOnly $True`
 
 **File Redirection:**
 
@@ -24,6 +24,6 @@ Since this script uses the Write-Output functionality of PowerShell, the output 
 
 **Examples:**
 
-Gathers only the hostnames of found hosts
+This command gathers only the hostnames of found hosts.
 
 `.\DNS-Mapper.ps1 -NetworkCIDR 10.32.0.0/24 -SleepTime 50 -FoundRecordsOnly $true | ForEach-Object { $_.Split(",")[1] }`
